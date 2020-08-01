@@ -19,6 +19,10 @@
     display: inline-block;
 }
 
+.weatherTemperatureCont i {
+    line-height: inherit;
+}
+
 .temperature {
     font-size: 30px;
     font-weight: bold;

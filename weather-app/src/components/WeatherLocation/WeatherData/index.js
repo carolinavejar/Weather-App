@@ -5,14 +5,14 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-const WeatherData = ( { data : { temperature, weatherState, humedity, wind} } ) =>  (
+const WeatherData = ( { data : { temperature, weatherState, humidity, wind} } ) =>  (
     <div className="weatherDataCont">
            <WeatherTemperature 
-            temperature= {temperature}
-            weatherState={weatherState} 
+            temperature={ temperature }
+            weatherState={ weatherState } 
         />
         <WeatherExtraInfo  
-            humedity={humedity}
+            humidity={humidity}
             wind={wind}
         />       
     </div>
@@ -22,7 +22,7 @@ WeatherData.PropTypes = {
     data: PropTypes.shape({
         temperature: PropTypes.number,
         weatherState: PropTypes.string.isRequired,
-        humedity: PropTypes.number.isRequired,
+        humidity: PropTypes.number.isRequired,
         wind: PropTypes.string.isRequired,
     })
 };
